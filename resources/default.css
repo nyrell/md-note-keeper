@@ -1,0 +1,81 @@
+body {
+    font-size: 12px;
+    font-family: 'DejaVu Serif', serif;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 1.4em;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
+h3 {
+  font-size: 1.1em;
+}
+
+h4 {
+  font-size: 1.0em;
+}
+
+h5 {
+  font-size: 0.97em;
+}
+
+h6 {
+  font-size: .94em;
+}
+
+blockquote p {
+    font-size: 1.08em;
+    font-style: italic;
+    margin: 10px auto 10px;
+}
+
+pre,
+code {
+    font-family: 'DejaVu Sans Mono', 'Courier New', monospace;
+    font-size: 1em;
+}
+
+pre {
+  background-color: #f4f4f4;
+  padding: 10px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table, th, td, tbody, thead {
+    border: 0px solid black;
+    margin: 0px;
+    padding: 0px;
+}
+
+table {
+    background-color: black;
+}
+
+th {
+    font-weight: bold;
+    background-color: #BBBBBB;
+    padding: 4px;
+}
+
+td {
+    background-color: white;
+    padding: 4px;
+}
+
+ul, ol {
+    margin-top: 0px;
+    margin-bottom: 15px;
+}

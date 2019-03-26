@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<import>
+  <note title="aaa">En text om aaa.</note>
+  <note title="bbb">En text om bbb.</note>
+  <note title="ccc">En text om ccc.
+  Rad 2
+  Rad 3
+
+  Rad 5</note>
+</import>
+

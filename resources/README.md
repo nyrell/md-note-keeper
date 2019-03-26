@@ -2,6 +2,8 @@
 
 *MD Note Keeper* is an notebook application that supports formatting using markdown syntax. All notes are automatically stored in a database and there is no need to manually save the notes.
 
+Github page: <https://github.com/nyrell/md-note-keeper/>
+
 
 ## Some features from the user perspective
 

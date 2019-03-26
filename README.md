@@ -64,3 +64,4 @@ Note that the css support of JEditorPane (that is used to display the HTML) is v
 Copyright © 2019 Mattias Nyrell
 
 MIT License
+ 

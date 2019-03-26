@@ -11,4 +11,4 @@ All notable changes to this project will be documented in this file. This change
 * Initial release
 
 [Unreleased]: https://github.com/your-name/md-note-keeper/compare/1.0.0...HEAD
-[0.1.1]: https://github.com/nyrell/md-note-keeper/releases/tag/1.0.0
+[1.0.0]: https://github.com/nyrell/md-note-keeper/releases/tag/1.0.0

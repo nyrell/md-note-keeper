@@ -54,7 +54,7 @@ Or build a jar file and run that:
 
 ## Installation from release
 
-Download the release and unpack in a directory of your choice. Run with:
+Download the zip file from the [release](https://github.com/nyrell/md-note-keeper/releases) and unpack in a directory of your choice. Move to the directory and start the program with:
 
     $ java -jar md-note-keeper-x.x.x.jar
 

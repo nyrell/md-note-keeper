@@ -27,6 +27,7 @@ Some Java/Swing specific features explored:
 * Java preferences (java.util.prefs.Preferences)
 * Undo/Redo using undomanager (javax.swing.undo.UndoManager)
 * HTML/CSS display using JEditorPane
+* Font handling
 
 
 ## TODO: 
@@ -34,6 +35,8 @@ Some Java/Swing specific features explored:
 ### Possible future improvements
 * Allow change of db via File->Open
 * Allow hiding of raw-html view
+* Allow reordering of the notes in the list view using drag-and-drop.
+* Testing
 
 
 ## Installation from source
@@ -64,3 +67,4 @@ Note that the css support of JEditorPane (that is used to display the HTML) is v
 Copyright © 2019 Mattias Nyrell
 
 MIT License
+ 

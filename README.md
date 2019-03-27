@@ -39,6 +39,9 @@ Some Java/Swing specific features explored:
 * Allow hiding of raw-html view
 * Allow reordering of the notes in the list view using drag-and-drop.
 * Testing
+* Change so that the custom CSS is stored in the database. Allow editing via a textbox accessible from the menu.
+* Change so that it is possible to have a default css file that applies to all databases. 
+* Avoid reading/writing preferences outside of main and window-closing. Pass parameters instead.
 
 
 ## Installation from source

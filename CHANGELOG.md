@@ -3,7 +3,7 @@ All notable changes to this project will be documented in this file. This change
 
 ## [Unreleased]
 ### Changed
-- ...
+- Passed divider locations as parameters to make-window-frame instead of reading directly from java preferences.
 
 ## [1.0.0] - 2019-03-26
 ### Added

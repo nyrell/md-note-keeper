@@ -22,14 +22,14 @@ Some features/techniques used:
 * Markdown support by use of [markdown-clj](https://github.com/yogthos/markdown-clj).
 * Customized logging using [Timbre](https://github.com/ptaoussanis/timbre).
 * Setting environment variables through project.clj using [Environ](https://github.com/weavejester/environ).
-* Use of static code analysis tool (code style) [Kibit](https://github.com/jonase/kibit)
-* Use of code analysis tool (LINT) [Eastwood](https://github.com/jonase/eastwood)
+* Use of static code analysis tool (code style) [Kibit](https://github.com/jonase/kibit).
+* Use of code analysis tool (LINT) [Eastwood](https://github.com/jonase/eastwood).
 
 Some Java/Swing specific features explored:
 * Java preferences (java.util.prefs.Preferences)
 * Undo/Redo using undomanager (javax.swing.undo.UndoManager)
 * HTML/CSS display using JEditorPane
-* Font handling
+* Font handling (see the [custom font dialog](https://github.com/nyrell/md-note-keeper/blob/master/src/md_note_keeper/font_dialog.clj))
 
 
 ## TODO: 
@@ -41,7 +41,7 @@ Some Java/Swing specific features explored:
 * Testing
 * Change so that the custom CSS is stored in the database. Allow editing via a textbox accessible from the menu.
 * Change so that it is possible to have a default css file that applies to all databases. 
-* Avoid reading/writing preferences outside of main and window-closing. Pass parameters instead.
+* Replace JEditorPane with JavaFX webview
 
 
 ## Installation from source

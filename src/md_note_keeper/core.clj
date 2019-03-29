@@ -248,7 +248,7 @@
   (let [frame (to-root e)
         width  (.width (config frame :size))
         height (.height (config frame :size))
-        divider-location (config (select frame [:#split-list-note]) :divider-location)
+        divider-location-list (config (select frame [:#split-list-note]) :divider-location)
         divider-location-editor (config (select frame [:#split-edit-view]) :divider-location)
         editor-font (get-editor-font)
 
@@ -260,7 +260,7 @@
       (set-pref "width" width)
       (set-pref "height" height) )
 
-    (set-pref "divider-location" divider-location)
+    (set-pref "divider-location-list" divider-location-list)
     (set-pref "divider-location-editor" divider-location-editor)
     (set-pref "frame-ext-state" frame-ext-state)
     (set-pref "font-name" (.getName editor-font))
@@ -502,14 +502,14 @@
                     :wrap-lines? true
                     :text "")))
 
-(defn split-panel-layout-t-b []
+(defn make-split-panel-layout-t-b [divider-location-editor]
   (top-bottom-split
    (html-view)
    (editor)
-   :divider-location (read-string (get-pref "divider-location-editor" 1/2))
+   :divider-location divider-location-editor
    :id :split-edit-view))
 
-(defn make-window-frame []
+(defn make-window-frame [divider-location-list divider-location-editor]
   (frame
    :title program-title
    :on-close :dispose
@@ -537,13 +537,13 @@
                :placement :top
                :tabs [{:title "Note"
                        :tip   "View and edit note"
-                       :content (split-panel-layout-t-b)}
+                       :content (make-split-panel-layout-t-b divider-location-editor)}
                       {:title "Raw HTML"
                        :tip   "View the generated HTML of the MD note"
                        :content (raw-view)} ])
               
               :id :split-list-note
-              :divider-location (read-string (get-pref "divider-location" 1/4))))
+              :divider-location divider-location-list))
    ))
 
 (defn add-behaviors [f]
@@ -589,11 +589,15 @@
       (let [width  (read-string (get-pref "width" 300))
             height (read-string (get-pref "height" 400))
             frame-ext-state (read-string (get-pref "frame-ext-state" java.awt.Frame/NORMAL))
+            divider-location-list   (read-string (get-pref "divider-location-list" 1/4))
+            divider-location-editor (read-string (get-pref "divider-location-editor" 1/2))
             font-name (get-pref "font-name" "MONOSPACED")
             font-size (read-string (get-pref "font-size" 14))]
 
         (when-not (nil? @gui-frame) (.dispose @gui-frame))
-        (reset! gui-frame (add-behaviors (make-window-frame)))
+        (reset! gui-frame (add-behaviors (make-window-frame
+                                          divider-location-list
+                                          divider-location-editor)))
         (gui-repopulate-list)
         (list-select-by-ix 0)
         (set-editor-font font-name font-size)
